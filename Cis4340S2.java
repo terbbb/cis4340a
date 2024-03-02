@@ -1,0 +1,31 @@
+/******************************************************************************
+ *  Compilation:  javac Cis4340.java
+ *  Execution:    java Cis4340
+ *
+ *  Prints 
+ *    "Hello, World - from the class of cis4340 - Spring 2024 - UCF (your name here_)".
+ *  By tradition, this is everyone's first program.
+ *
+ * Revision History:
+ *   % java Cis4340
+ *  Hello, World - from the class of cis4340 - Spring 2024 - UCF (your name here)
+ *  %
+ *
+ ******************************************************************************/
+
+import java.io.File;
+
+public class Cis4340S2 {
+
+    public static void main(String[] args) {
+        // Prints "Hello, World" to the terminal window.
+        System.out.println("Hello, World - from the class of cis4340 - Spring 2024 - UCF Bret Geyer");
+    }
+    public void deleteFile() {
+        File someFile = new File("someFileName.txt");
+
+        if (!someFile.delete()) {
+            System.out.println("Failed to delete the file.");
+        }
+    }
+}
